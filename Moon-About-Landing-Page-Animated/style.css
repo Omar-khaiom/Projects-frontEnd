@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lunasima:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    font-weight: 400;
+    color: azure;
+    font-style: normal;
+    background-color: black;
+}
+
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(/Moon-About-Landing-Page-Animated/imgs/space.jpg) no-repeat fixed center;
+    background-size: cover;
+    animation: scale 60s linear infinite ;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    position: absolute;
+    max-width: 1200px;
+    margin: 0px;
+    
+}
+
+a {
+    text-decoration: none;
+    color:hsla(300, 66%, 77%, 0.774);
+    text-shadow: 2px 2px 4px hsla(210, 0%, 50%, 0.151);
+}
+
+
+ol {
+    list-style-type: none;
+    display: flex;
+    margin-left: 32px;
+    
+}
+.moon {
+    position: absolute;
+     color: black;
+     opacity: 82%;
+     animation: rotate 15s linear infinite ;
+     will-change: transform;
+     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+}
+
+@keyframes rotate{
+    0% {
+        width: 20rem;
+        top: 10%;
+        right: 30%;
+        transform: rotate(0deg);
+    }
+    25% {
+        width: 30rem;
+        top: 15%;
+        right: 10%;
+        transform: rotate(90deg);
+    }
+    50% {
+        width: 40rem;
+        top: 20%;
+        right: -10%;
+        transform: rotate(180deg);
+    }
+    75% {
+        width: 30rem;
+        top: 15%;
+        right: 10%;
+        transform: rotate(270deg);
+    }
+    100% {
+        width: 20rem;
+        top: 10%;
+        right: 30%;
+        transform: rotate(360deg);
+    }
+
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    align-items: center ;
+    padding: 130px 30px;
+   
+}
+
+header>a {
+    font-weight: 600;
+    font-family: "Playfair Display","sans-serif";
+    margin-left: 3%;
+    font-size: 30px;
+    margin-top: -13%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    opacity: .8px;
+    letter-spacing: 3px;
+    color: #7a6b6b;
+}
+
+header ol li {
+    display: flex;
+    margin-top: -40%;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Merriweather","sans-serif";
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+    padding-left:  11%;
+    opacity: 0.8;
+}
+
+header ol li:first-child {
+    opacity: 1.3;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: "Merriweather","sans-serif";
+    font-weight: bold;
+    max-width: 60%;
+    padding-bottom: 25px;
+    padding-top: 7px;
+    margin-bottom: 17px;
+    margin-top: -15%;
+    margin-left: 1%;
+    font-weight: bolder;
+    color:hsl(0, 0%, 94%);
+    line-height: 1.9;
+    text-shadow: 2px 2px 4px hsla(210, 0%, 50%, 0.151);
+    background-blend-mode:multiply;
+    background:hsla(212, 100%, 97%, 0.057);
+ 
+}
+
+main {
+    padding-top: 35px;
+    margin-left: 25px;
+    font-weight:lighter;
+}
+main > p {
+    color: hsla(188, 88%, 36%, 0.874);
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 2%;
+    margin-left: 1%;
+    line-height: 2;
+    max-width: 80%;
+    text-shadow: 2px 2px 4px hsla(0, 100%, 100%, 0.151);
+
+}
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 60%;
+    justify-content:flex-end;
+    margin-top: 20px;
+    font-weight: 400;
+    
+}
+
+.d-flex a {
+    display: flex;
+    margin-right: 40px;
+    font-size: 15px;
+    align-items: center;
+    
+}
+
+.d-flex a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.d-flex a:first-child span {
+    background: rgba(174, 29, 29, 0.58);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.d-flex a:last-child span {
+    height: 20px;
+    width: 20px;
+    font-size: 7px;
+    border: 2px solid rgba(228, 218, 218, 0.687);
+    border-radius: 50%;
+}
+ol.info {
+    padding-top: -5%;
+}
+ol.info li {
+    padding-top: 2%;
+    flex: 0 0 30%;
+}
+
+ol.info li h5 {
+    margin-bottom: 10px;
+}
+
+ol.info li h4 {
+    padding-bottom: 0%;
+}
+
+ol.info li p {
+    padding-right: 20%;
+    opacity: 0.75;
+}
+
+
+
+
