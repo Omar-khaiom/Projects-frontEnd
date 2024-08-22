@@ -4,18 +4,26 @@ body {
     padding: 0;
     margin: 0;
 
+
 }
 section {
+    text-align: center;
     display: grid;
     align-content: center;
     place-items: center;
     color: white;
     min-height: 100vh;
 }
+.hiddens {
+    opacity: 0;
+    transition:all 2s;
+    filter: blur(5px);
+    transform: translateX(-100%);
 
+}
 .hidden {
     opacity: 0;
-    transition:all 1s;
+    transition:all 1.5s;
     filter: blur(5px);
     transform: translateX(-100%);
 }
@@ -28,16 +36,18 @@ section {
 .logosection {
     display: flex;
     margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 .logo {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 10px;
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+    display: inline-block;
+    background-color: rgba(87, 107, 36, 0.68);
+    border-radius: 2px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    /* transition: transform 0.5s ; */
+
 }
 img {
     height: 200px;
